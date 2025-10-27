@@ -2,157 +2,157 @@
   {
     "id": "1",
     "label": "VPC",
-    "type": "awsVpc",
+    "type": "aws-vpc",
     "category": "Network"
   },
   {
     "id": "2",
     "label": "IG",
-    "type": "awsIg",
+    "type": "aws-ig",
     "category": "Network"
   },
   {
     "id": "3",
     "label": "Subnet",
-    "type": "awsSubnet",
+    "type": "aws-subnet",
     "category": "Network"
   },
   {
     "id": "4",
     "label": "EIP",
-    "type": "awsEip",
+    "type": "aws-eip",
     "category": "Network"
   },
   {
     "id": "5",
     "label": "DB Subnet",
-    "type": "awsDbSubnet",
+    "type": "aws-db-subnet",
     "category": "Network"
   },
   {
     "id": "6",
     "label": "RTB",
-    "type": "awsRtb",
+    "type": "aws-rtb",
     "category": "Network"
   },
   {
     "id": "7",
     "label": "NAT",
-    "type": "awsNat",
+    "type": "aws-nat",
     "category": "Network"
   },
   {
     "id": "8",
     "label": "TGroup",
-    "type": "awsTGroup",
+    "type": "aws-tgroup",
     "category": "Network"
   },
   {
     "id": "9",
     "label": "Route53",
-    "type": "awsRoute53",
+    "type": "aws-route53",
     "category": "Network"
   },
   {
     "id": "10",
     "label": "ALB",
-    "type": "awsAlb",
+    "type": "aws-alb",
     "category": "Network"
   },
   {
     "id": "11",
     "label": "EC2",
-    "type": "awsEc2",
+    "type": "aws-ec2",
     "category": "Compute"
   },
   {
     "id": "12",
     "label": "RDS",
-    "type": "awsRds",
+    "type": "aws-rds",
     "category": "Database"
   },
   {
     "id": "13",
     "label": "S3",
-    "type": "awsS3",
+    "type": "aws-s3",
     "category": "Storage"
   },
   {
     "id": "14",
     "label": "ECR",
-    "type": "awsEcr",
+    "type": "aws-ecr",
     "category": "Storage"
   },
   {
     "id": "15",
     "label": "SQS",
-    "type": "awsSqs",
+    "type": "aws-sqs",
     "category": "Storage"
   },
   {
     "id": "16",
     "label": "EBS",
-    "type": "awsEbs",
+    "type": "aws-ebs",
     "category": "Storage"
   },
   {
     "id": "17",
     "label": "Cognito",
-    "type": "awsCognito",
+    "type": "aws-cognito",
     "category": "Security"
   },
   {
     "id": "18",
     "label": "SG",
-    "type": "awsSg",
+    "type": "aws-sg",
     "category": "Security"
   },
   {
     "id": "19",
     "label": "KMS",
-    "type": "awsKms",
+    "type": "aws-kms",
     "category": "Security"
   },
   {
     "id": "20",
     "label": "IAM Role",
-    "type": "awsIamRole",
+    "type": "aws-iam-role",
     "category": "Security"
   },
   {
     "id": "21",
     "label": "IAM Policy",
-    "type": "awsIamPolicy",
+    "type": "aws-iam-policy",
     "category": "Security"
   },
   {
     "id": "22",
     "label": "IAM User",
-    "type": "awsIamUser",
+    "type": "aws-iam-user",
     "category": "Security"
   },
   {
     "id": "23",
     "label": "IAM Group",
-    "type": "awsIamGroup",
+    "type": "aws-iam-group",
     "category": "Security"
   },
   {
     "id": "24",
     "label": "I Profile",
-    "type": "awsIProfile",
+    "type": "aws-iprofile",
     "category": "Security"
   },
   {
     "id": "25",
     "label": "SSM",
-    "type": "awsSsm",
+    "type": "aws-ssm",
     "category": "Other"
   },
   {
     "id": "27",
     "label": "SQS",
-    "type": "awsSqs",
+    "type": "aws-sqs",
     "category": "Other"
   }
 ]
