@@ -1,0 +1,75 @@
+[
+    {
+      "category": "Basic Information",
+      "fields": [
+        {
+          "name": "cidrBlock",
+          "label": "CIDR Block",
+          "type": "string",
+          "fieldType": "text-input",
+          "description": "The IPv4 network range for the VPC, in CIDR notation",
+          "validation": {
+            "pattern": "/^([0-9]{1,3}.){3}[0-9]{1,3}([0-9]|[1-2][0-9]|3[0-2])$/",
+            "required": true
+          },
+          "initialValue": "10.0.0.0/16"
+        },
+        {
+          "name": "enableDnsHostnames",
+          "label": "Enable DNS Hostnames",
+          "type": "boolean",
+          "fieldType": "checkbox",
+          "description":
+            "Indicates whether instances launched in the VPC get DNS hostnames",
+          "validation": {
+            "required": true
+          },
+          "initialValue": false
+        },
+        {
+          "name": "enableDnsSupport",
+          "label": "Enable DNS Support",
+          "type": "boolean",
+          "fieldType": "checkbox",
+          "description":
+            "Indicates whether the DNS resolution is supported for the VPC",
+          "validation": {
+            "required": true
+          },
+          "initialValue": false
+        }
+      ]
+    },
+    {
+      "category": "Array of Tags",
+      "fields": [
+        {
+          "name": "tags",
+          "label": "Tags",
+          "type": "array",
+          "fieldType": "tags",
+          "description": "A map of tags to assign to the VPC",
+          "validation": {},
+          "item": {
+            "type": "object",
+            "fields": [
+              {
+                "name": "key",
+                "label": "Key",
+                "type": "string",
+                "validation": { "required": true },
+                "initialValue": "hello"
+              },
+              {
+                "name": "value",
+                "label": "Value",
+                "type": "string",
+                "validation": { "required": true },
+                "initialValue": "world"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
