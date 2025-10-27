@@ -1,0 +1,71 @@
+[
+  {
+    "category": "Basic Information",
+    "fields": [
+      {
+        "name": "cidrBlock",
+        "label": "CIDR Block",
+        "type": "string",
+        "fieldType": "text-input",
+        "description": "The IPv4 network range for the subnet, in CIDR notation",
+        "validation": {
+        "pattern": "/^(?:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d))\\.){3}(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\/(3[0-2]|[12]\\d|[0-9]))$/",
+          "required": true
+        },
+        "initialValue": "10.0.1.0/24"
+      },
+      {
+        "name": "availabilityZone",
+        "label": "Availability Zone",
+        "type": "string",
+        "fieldType": "text-input",
+        "description": "The Availability Zone for the subnet",
+        "validation": {
+          "required": true
+        },
+        "initialValue": "us-east-1a"
+      },
+      {
+        "name": "mapPublicIpOnLaunch",
+        "label": "Map Public IP on Launch",
+        "type": "boolean",
+        "fieldType": "checkbox",
+        "description": "Specify true to indicate that instances launched into the subnet should be assigned a public IP address",
+        "validation": {},
+        "initialValue": false
+      }
+    ]
+  },
+  {
+    "category": "Array of Tags",
+    "fields": [
+      {
+        "name": "tags",
+        "label": "Tags",
+        "type": "array",
+        "fieldType": "tags",
+        "description": "A map of tags to assign to the resource",
+        "validation": {},
+        "item": {
+          "type": "object",
+          "fields": [
+            {
+              "name": "key",
+              "label": "Key",
+              "type": "string",
+              "validation": { "required": true },
+              "initialValue": "Name"
+            },
+            {
+              "name": "value",
+              "label": "Value",
+              "type": "string",
+              "validation": { "required": true },
+              "initialValue": "MySubnet"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
