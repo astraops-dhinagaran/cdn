@@ -9,7 +9,7 @@
           "fieldType": "text-input",
           "description": "The IPv4 network range for the VPC, in CIDR notation",
           "validation": {
-            "pattern": "/^a.*z$/",
+            "pattern": "/^(?:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d))\\.){3}(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\/(3[0-2]|[12]\\d|[0-9]))?$/",
             "required": true
           },
           "initialValue": "10.0.0.0/16"
