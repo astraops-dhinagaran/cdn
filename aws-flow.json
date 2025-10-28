@@ -3,156 +3,182 @@
     "id": "1",
     "label": "VPC",
     "type": "aws-vpc",
-    "category": "NETWORK"
+    "category": "NETWORK",
+    "resourceType": "VPC"
   },
   {
     "id": "2",
     "label": "IG",
     "type": "aws-ig",
-    "category": "NETWORK"
+    "category": "NETWORK",
+    "resourceType": "InternetGateway"
   },
   {
     "id": "3",
     "label": "Subnet",
     "type": "aws-subnet",
-    "category": "NETWORK"
+    "category": "NETWORK",
+    "resourceType": "Subnet"
   },
   {
     "id": "4",
     "label": "EIP",
     "type": "aws-eip",
-    "category": "NETWORK"
+    "category": "NETWORK",
+    "resourceType": "ElasticIP"
   },
   {
     "id": "5",
     "label": "DB Subnet",
     "type": "aws-db-subnet",
-    "category": "NETWORK"
+    "category": "NETWORK",
+    "resourceType": "RDSDBSubnetGroup"
   },
   {
     "id": "6",
     "label": "RTB",
     "type": "aws-rtb",
-    "category": "NETWORK"
+    "category": "NETWORK",
+    "resourceType": "RouteTable"
   },
   {
     "id": "7",
     "label": "NAT",
     "type": "aws-nat",
-    "category": "NETWORK"
+    "category": "NETWORK",
+    "resourceType": "NatGateway"
   },
   {
     "id": "8",
     "label": "TGroup",
     "type": "aws-tgroup",
-    "category": "NETWORK"
+    "category": "NETWORK",
+    "resourceType": "TargetGroup"
   },
   {
     "id": "9",
     "label": "Route53",
     "type": "aws-route53",
-    "category": "NETWORK"
+    "category": "NETWORK",
+    "resourceType": "Route53HostedZone"
   },
   {
     "id": "10",
     "label": "ALB",
     "type": "aws-alb",
-    "category": "NETWORK"
+    "category": "NETWORK",
+    "resourceType": "ApplicationLoadBalancer"
   },
   {
     "id": "11",
     "label": "EC2",
     "type": "aws-ec2",
-    "category": "COMPUTE"
+    "category": "COMPUTE",
+    "resourceType": "EC2"
   },
   {
     "id": "12",
     "label": "RDS",
     "type": "aws-rds",
-    "category": "DATABASE"
+    "category": "DATABASE",
+    "resourceType": "RDSDBInstance"
   },
   {
     "id": "13",
     "label": "S3",
     "type": "aws-s3",
-    "category": "STORAGE"
+    "category": "STORAGE",
+    "resourceType": "S3"
   },
   {
     "id": "14",
     "label": "ECR",
     "type": "aws-ecr",
-    "category": "STORAGE"
+    "category": "STORAGE",
+    "resourceType": "ECRRepository"
   },
   {
     "id": "15",
     "label": "SQS",
     "type": "aws-sqs",
-    "category": "STORAGE"
+    "category": "STORAGE",
+    "resourceType": "SQS"
   },
   {
     "id": "16",
     "label": "EBS",
     "type": "aws-ebs",
-    "category": "STORAGE"
+    "category": "STORAGE",
+    "resourceType": "EBSVolume"
   },
   {
     "id": "17",
     "label": "Cognito",
     "type": "aws-cognito",
-    "category": "SECURITY"
+    "category": "SECURITY",
+    "resourceType": "CognitoUserPool"
   },
   {
     "id": "18",
     "label": "SG",
     "type": "aws-sg",
-    "category": "SECURITY"
+    "category": "SECURITY",
+    "resourceType": "SecurityGroup"
   },
   {
     "id": "19",
     "label": "KMS",
     "type": "aws-kms",
-    "category": "SECURITY"
+    "category": "SECURITY",
+    "resourceType": "KMSKey"
   },
   {
     "id": "20",
     "label": "IAM Role",
     "type": "aws-iam-role",
-    "category": "SECURITY"
+    "category": "SECURITY",
+    "resourceType": "IAMRole"
   },
   {
     "id": "21",
     "label": "IAM Policy",
     "type": "aws-iam-policy",
-    "category": "SECURITY"
+    "category": "SECURITY",
+    "resourceType": "IAMPolicy"
   },
   {
     "id": "22",
     "label": "IAM User",
     "type": "aws-iam-user",
-    "category": "SECURITY"
+    "category": "SECURITY",
+    "resourceType": "IAMUser"
   },
   {
     "id": "23",
     "label": "IAM Group",
     "type": "aws-iam-group",
-    "category": "SECURITY"
+    "category": "SECURITY",
+    "resourceType": "IAMGroup"
   },
   {
     "id": "24",
     "label": "I Profile",
     "type": "aws-iprofile",
-    "category": "SECURITY"
+    "category": "SECURITY",
+    "resourceType": "IAMRolePolicyAttachment"
   },
   {
     "id": "25",
     "label": "SSM",
     "type": "aws-ssm",
-    "category": "OTHER"
+    "category": "OTHER",
+    "resourceType": "SSMDocument"
   },
   {
     "id": "27",
     "label": "SQS",
     "type": "aws-sqs",
-    "category": "OTHER"
+    "category": "OTHER",
+    "resourceType": "SQS"
   }
 ]
