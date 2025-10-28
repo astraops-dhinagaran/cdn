@@ -179,8 +179,7 @@
           "validation": {
             "pattern": "/^(?:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d))\\.){3}(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\/(3[0-2]|[12]\\d|[0-9]))$/",
             "required": true
-          },
-          "defaultValue": "10.0.0.0/16"
+          }
         },
         {
           "name": "enableDnsHostnames",
@@ -190,8 +189,7 @@
           "description": "Indicates whether instances launched in the VPC get DNS hostnames",
           "validation": {
             "required": true
-          },
-          "defaultValue": false
+          }
         },
         {
           "name": "enableDnsSupport",
@@ -201,8 +199,7 @@
           "description": "Indicates whether the DNS resolution is supported for the VPC",
           "validation": {
             "required": true
-          },
-          "defaultValue": false
+          }
         }
       ]
     },
@@ -243,5 +240,8 @@
         }
       ]
     }
-  ]
+  ],
+  "defaultValue": {
+    "cidrBlock": "10.10.1.10/24"
+  }
 }

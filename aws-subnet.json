@@ -172,8 +172,7 @@
                     "validation": {
                         "pattern": "/^(?:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d))\\.){3}(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\/(3[0-2]|[12]\\d|[0-9]))$/",
                         "required": true
-                    },
-                    "defaultValue": "10.0.1.0/24"
+                    }
                 },
                 {
                     "name": "availabilityZone",
@@ -183,8 +182,7 @@
                     "description": "The Availability Zone for the subnet",
                     "validation": {
                         "required": true
-                    },
-                    "defaultValue": "us-east-1a"
+                    }
                 },
                 {
                     "name": "mapPublicIpOnLaunch",
@@ -192,8 +190,7 @@
                     "type": "boolean",
                     "fieldType": "checkbox",
                     "description": "Specify true to indicate that instances launched into the subnet should be assigned a public IP address",
-                    "validation": {},
-                    "defaultValue": false
+                    "validation": {}
                 }
             ]
         },
@@ -234,5 +231,8 @@
                 }
             ]
         }
-    ]
+    ],
+    "defaultValue": {
+        "cidrBlock": "10.10.10.10/16"
+    }
 }
