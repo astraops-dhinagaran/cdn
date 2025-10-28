@@ -173,7 +173,7 @@
                         "pattern": "/^(?:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d))\\.){3}(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\/(3[0-2]|[12]\\d|[0-9]))$/",
                         "required": true
                     },
-                    "initialValue": "10.0.1.0/24"
+                    "defaultValue": "10.0.1.0/24"
                 },
                 {
                     "name": "availabilityZone",
@@ -184,7 +184,7 @@
                     "validation": {
                         "required": true
                     },
-                    "initialValue": "us-east-1a"
+                    "defaultValue": "us-east-1a"
                 },
                 {
                     "name": "mapPublicIpOnLaunch",
@@ -193,7 +193,7 @@
                     "fieldType": "checkbox",
                     "description": "Specify true to indicate that instances launched into the subnet should be assigned a public IP address",
                     "validation": {},
-                    "initialValue": false
+                    "defaultValue": false
                 }
             ]
         },
@@ -206,7 +206,10 @@
                     "type": "array",
                     "fieldType": "tags",
                     "description": "A map of tags to assign to the resource",
-                    "validation": {},
+                    "validation": {
+                        "required": true,
+                        "minLength": 1
+                    },
                     "item": {
                         "type": "object",
                         "fields": [
@@ -217,7 +220,6 @@
                                 "validation": {
                                     "required": true
                                 },
-                                "initialValue": "Name"
                             },
                             {
                                 "name": "value",
@@ -226,7 +228,6 @@
                                 "validation": {
                                     "required": true
                                 },
-                                "initialValue": "MySubnet"
                             }
                         ]
                     }
