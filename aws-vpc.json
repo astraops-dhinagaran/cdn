@@ -180,7 +180,7 @@
             "pattern": "/^(?:((25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d))\\.){3}(25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]?\\d)(?:\\/(3[0-2]|[12]\\d|[0-9]))$/",
             "required": true
           },
-          "initialValue": "10.0.0.0/16"
+          "defaultValue": "10.0.0.0/16"
         },
         {
           "name": "enableDnsHostnames",
@@ -191,7 +191,7 @@
           "validation": {
             "required": true
           },
-          "initialValue": false
+          "defaultValue": false
         },
         {
           "name": "enableDnsSupport",
@@ -202,7 +202,7 @@
           "validation": {
             "required": true
           },
-          "initialValue": false
+          "defaultValue": false
         }
       ]
     },
@@ -215,7 +215,10 @@
           "type": "array",
           "fieldType": "tags",
           "description": "A map of tags to assign to the VPC",
-          "validation": {},
+          "validation": {
+            "required": true,
+            "minLength": 1
+          },
           "item": {
             "type": "object",
             "fields": [
@@ -226,7 +229,6 @@
                 "validation": {
                   "required": true
                 },
-                "initialValue": "hello"
               },
               {
                 "name": "value",
@@ -235,7 +237,6 @@
                 "validation": {
                   "required": true
                 },
-                "initialValue": "world"
               }
             ]
           }
