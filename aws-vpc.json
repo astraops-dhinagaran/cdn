@@ -228,7 +228,7 @@
                 "type": "string",
                 "validation": {
                   "required": true
-                },
+                }
               },
               {
                 "name": "value",
@@ -236,7 +236,7 @@
                 "type": "string",
                 "validation": {
                   "required": true
-                },
+                }
               }
             ]
           }
